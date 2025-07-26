@@ -48,7 +48,8 @@ const userSchema = new mongoose.Schema({
                     minSymbols: 0
                 });
             }
-    },
+    }
+},
 
     socketId:{
         type: String,
@@ -57,7 +58,7 @@ const userSchema = new mongoose.Schema({
 
     },
 
- 
+
 },{ timestamps: true });
 
 userSchema.methods.generateAuthToken = async function() {
